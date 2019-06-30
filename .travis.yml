@@ -1,0 +1,49 @@
+# Travis CI build configuration
+
+# branch safelist
+branches:
+  only:
+    - stable
+
+env:
+  - GODOT_VERSION="3.1.1"
+
+before_install:
+
+  # install dependencies
+
+  - sudo apt-get update
+  - sudo apt-get install -y --no-install-recommends ca-certificates
+  - sudo apt-get install -y --no-install-recommends git
+  - sudo apt-get install -y --no-install-recommends python
+  - sudo apt-get install -y --no-install-recommends python-openssl
+  - sudo apt-get install -y --no-install-recommends unzip
+  - sudo apt-get install -y --no-install-recommends wget
+  - sudo apt-get install -y --no-install-recommends zip
+
+  - rm -rf /var/lib/apt/lists/*
+
+  # install headless godot & export templates
+
+  - wget https://downloads.tuxfamily.org/godotengine/${GODOT_VERSION}/Godot_v${GODOT_VERSION}-stable_linux_headless.64.zip
+  - wget https://downloads.tuxfamily.org/godotengine/${GODOT_VERSION}/Godot_v${GODOT_VERSION}-stable_export_templates.tpz
+
+  - mkdir ~/.cache
+  - mkdir -p ~/.config/godot
+  - mkdir -p ~/.local/share/godot/templates/${GODOT_VERSION}.stable
+
+  - unzip Godot_v${GODOT_VERSION}-stable_linux_headless.64.zip
+  - mv Godot_v${GODOT_VERSION}-stable_linux_headless.64 /usr/local/bin/godot
+  - unzip Godot_v${GODOT_VERSION}-stable_export_templates.tpz
+  - mv templates/* ~/.local/share/godot/templates/${GODOT_VERSION}.stable
+  - rm -f Godot_v${GODOT_VERSION}-stable_export_templates.tpz Godot_v${GODOT_VERSION}-stable_linux_headless.64.zip
+
+# github tagged releases
+
+deploy:
+  provider: releases
+  api_key: "9422036dea8551d0dae667f2b5834951d36eeb9d"
+  file: "FILE TO UPLOAD"
+  skip_cleanup: true
+  on:
+    tags: true  
