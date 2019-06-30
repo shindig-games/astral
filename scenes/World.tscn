@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://src/player/player.gd" type="Script" id=1]
 [ext_resource path="res://icon.png" type="Texture" id=2]
@@ -7,192 +7,27 @@
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 32, 64 )
 
-[sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 32, 32 )
+[node name="World" type="Node2D"]
 
-[node name="Node2D" type="Node2D"]
-
-[node name="KinematicBody2D" type="KinematicBody2D" parent="."]
-position = Vector2( 480, 256 )
+[node name="Player" type="KinematicBody2D" parent="."]
+position = Vector2( 192, 384 )
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_group_": true
 }
 
-[node name="Sprite" type="Sprite" parent="KinematicBody2D"]
+[node name="Sprite" type="Sprite" parent="Player"]
 position = Vector2( -1.14441e-05, -5.72205e-06 )
 scale = Vector2( 0.5, 1 )
 texture = ExtResource( 2 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="KinematicBody2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
 visible = false
 shape = SubResource( 1 )
 
-[node name="Walls" type="Node2D" parent="."]
-
-[node name="Wall3" type="StaticBody2D" parent="Walls"]
-editor/display_folded = true
-visible = false
-modulate = Color( 0, 0, 0, 1 )
-position = Vector2( 864, 512 )
-__meta__ = {
-"_edit_group_": true
-}
-
-[node name="Sprite" type="Sprite" parent="Walls/Wall3"]
-scale = Vector2( 0.5, 0.5 )
-texture = ExtResource( 2 )
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/Wall3"]
-shape = SubResource( 2 )
-
-[node name="Wall" type="StaticBody2D" parent="Walls"]
-editor/display_folded = true
-visible = false
-modulate = Color( 0, 0, 0, 1 )
-position = Vector2( 800, 512 )
-__meta__ = {
-"_edit_group_": true
-}
-
-[node name="Sprite" type="Sprite" parent="Walls/Wall"]
-scale = Vector2( 0.5, 0.5 )
-texture = ExtResource( 2 )
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/Wall"]
-shape = SubResource( 2 )
-
-[node name="Wall2" type="StaticBody2D" parent="Walls"]
-editor/display_folded = true
-visible = false
-modulate = Color( 0, 0, 0, 1 )
-position = Vector2( 608, 384 )
-__meta__ = {
-"_edit_group_": true
-}
-
-[node name="Sprite" type="Sprite" parent="Walls/Wall2"]
-scale = Vector2( 0.5, 0.5 )
-texture = ExtResource( 2 )
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/Wall2"]
-shape = SubResource( 2 )
-
-[node name="Wall4" type="StaticBody2D" parent="Walls"]
-editor/display_folded = true
-visible = false
-modulate = Color( 0, 0, 0, 1 )
-position = Vector2( 544, 384 )
-__meta__ = {
-"_edit_group_": true
-}
-
-[node name="Sprite" type="Sprite" parent="Walls/Wall4"]
-scale = Vector2( 0.5, 0.5 )
-texture = ExtResource( 2 )
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/Wall4"]
-shape = SubResource( 2 )
-
-[node name="Wall5" type="StaticBody2D" parent="Walls"]
-editor/display_folded = true
-visible = false
-modulate = Color( 0, 0, 0, 1 )
-position = Vector2( 480, 448 )
-__meta__ = {
-"_edit_group_": true
-}
-
-[node name="Sprite" type="Sprite" parent="Walls/Wall5"]
-scale = Vector2( 0.5, 0.5 )
-texture = ExtResource( 2 )
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/Wall5"]
-shape = SubResource( 2 )
-
-[node name="Wall6" type="StaticBody2D" parent="Walls"]
-editor/display_folded = true
-visible = false
-modulate = Color( 0, 0, 0, 1 )
-position = Vector2( 288, 512 )
-__meta__ = {
-"_edit_group_": true
-}
-
-[node name="Sprite" type="Sprite" parent="Walls/Wall6"]
-scale = Vector2( 0.5, 0.5 )
-texture = ExtResource( 2 )
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/Wall6"]
-shape = SubResource( 2 )
-
-[node name="Wall7" type="StaticBody2D" parent="Walls"]
-editor/display_folded = true
-visible = false
-modulate = Color( 0, 0, 0, 1 )
-position = Vector2( 160, 512 )
-__meta__ = {
-"_edit_group_": true
-}
-
-[node name="Sprite" type="Sprite" parent="Walls/Wall7"]
-scale = Vector2( 0.5, 0.5 )
-texture = ExtResource( 2 )
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/Wall7"]
-shape = SubResource( 2 )
-
-[node name="Wall8" type="StaticBody2D" parent="Walls"]
-editor/display_folded = true
-visible = false
-modulate = Color( 0, 0, 0, 1 )
-position = Vector2( 96, 512 )
-__meta__ = {
-"_edit_group_": true
-}
-
-[node name="Sprite" type="Sprite" parent="Walls/Wall8"]
-scale = Vector2( 0.5, 0.5 )
-texture = ExtResource( 2 )
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/Wall8"]
-shape = SubResource( 2 )
-
-[node name="Wall9" type="StaticBody2D" parent="Walls"]
-editor/display_folded = true
-visible = false
-modulate = Color( 0, 0, 0, 1 )
-position = Vector2( 32, 512 )
-__meta__ = {
-"_edit_group_": true
-}
-
-[node name="Sprite" type="Sprite" parent="Walls/Wall9"]
-scale = Vector2( 0.5, 0.5 )
-texture = ExtResource( 2 )
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/Wall9"]
-shape = SubResource( 2 )
-
-[node name="Wall10" type="StaticBody2D" parent="Walls"]
-editor/display_folded = true
-visible = false
-modulate = Color( 0, 0, 0, 1 )
-position = Vector2( 352, 512 )
-__meta__ = {
-"_edit_group_": true
-}
-
-[node name="Sprite" type="Sprite" parent="Walls/Wall10"]
-scale = Vector2( 0.5, 0.5 )
-texture = ExtResource( 2 )
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/Wall10"]
-shape = SubResource( 2 )
-
-[node name="TileMap" type="TileMap" parent="Walls"]
-scale = Vector2( 8, 8 )
+[node name="TileMap" type="TileMap" parent="."]
+scale = Vector2( 4, 4 )
 tile_set = ExtResource( 3 )
 cell_size = Vector2( 8, 8 )
 format = 1
-tile_data = PoolIntArray( 65544, 3, 0, 65545, 3, 0, 131076, 3, 0, 131077, 3, 0, 327683, 3, 0, 327684, 3, 0, 327685, 3, 0, 327686, 3, 0, 327687, 3, 0, 327688, 3, 0, 327689, 3, 0, 327690, 3, 0, 327691, 3, 0, 327692, 3, 0, 327693, 3, 0, 393220, 1, 0, 393221, 1, 0, 393222, 1, 0, 393223, 1, 0, 393224, 1, 0, 393225, 1, 0, 393226, 1, 0, 393227, 1, 0, 393228, 1, 0, 1638511, 0, 0 )
+tile_data = PoolIntArray( 917504, 3, 0, 917505, 3, 0, 917506, 3, 0, 917507, 3, 0, 917508, 3, 0, 917509, 3, 0, 917510, 3, 0, 917511, 3, 0, 917512, 3, 0, 917513, 3, 0, 917514, 3, 0, 917515, 3, 0, 917516, 3, 0, 917517, 3, 0, 917518, 3, 0, 917519, 3, 0, 917520, 3, 0, 917521, 3, 0, 917522, 3, 0, 917523, 3, 0, 917524, 3, 0, 917525, 3, 0, 917526, 3, 0, 917527, 3, 0, 917528, 3, 0, 917529, 3, 0, 917530, 3, 0, 917531, 3, 0, 917532, 3, 0, 917533, 3, 0, 917534, 3, 0, 917535, 3, 0, 983041, 1, 0, 983042, 1, 0, 983043, 1, 0, 983044, 1, 0, 983045, 1, 0, 983046, 1, 0, 983047, 1, 0, 983048, 1, 0, 983049, 1, 0, 983050, 1, 0, 983051, 1, 0, 983052, 1, 0, 983053, 1, 0, 983054, 1, 0, 983055, 1, 0, 983056, 1, 0, 983057, 1, 0, 983058, 1, 0, 983059, 1, 0, 983060, 1, 0, 983061, 1, 0, 983062, 1, 0, 983063, 1, 0, 983064, 1, 0, 983065, 1, 0, 983066, 1, 0, 983067, 1, 0, 983068, 1, 0, 983069, 1, 0, 983070, 1, 0, 1048578, 1, 0, 1048579, 1, 0, 1048580, 1, 0, 1048581, 1, 0, 1048582, 1, 0, 1048583, 1, 0, 1048584, 1, 0, 1048585, 1, 0, 1048586, 1, 0, 1048587, 1, 0, 1048588, 1, 0, 1048589, 1, 0, 1048590, 1, 0, 1048591, 1, 0, 1048592, 1, 0, 1048593, 1, 0, 1048594, 1, 0, 1048595, 1, 0, 1048596, 1, 0, 1048597, 1, 0, 1048598, 1, 0, 1048599, 1, 0, 1048600, 1, 0, 1048601, 1, 0, 1048602, 1, 0, 1048603, 1, 0, 1048604, 1, 0, 1048605, 1, 0, 1114116, 1, 0, 1114119, 1, 0, 1114120, 1, 0, 1114121, 1, 0, 1114122, 1, 0, 1114126, 1, 0, 1114127, 1, 0, 1114128, 1, 0, 1114129, 1, 0, 1114130, 1, 0, 1114133, 1, 0, 1114134, 1, 0, 1114135, 1, 0, 1114136, 1, 0, 1114137, 1, 0, 1114138, 1, 0, 1114139, 1, 0 )
