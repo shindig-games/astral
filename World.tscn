@@ -12,6 +12,7 @@ extents = Vector2( 32, 32 )
 [node name="Node2D" type="Node2D"]
 
 [node name="KinematicBody2D" type="KinematicBody2D" parent="."]
+editor/display_folded = true
 position = Vector2( 32, 414.732 )
 script = ExtResource( 1 )
 __meta__ = {
@@ -27,6 +28,7 @@ texture = ExtResource( 2 )
 shape = SubResource( 1 )
 
 [node name="Walls" type="Node2D" parent="."]
+editor/display_folded = true
 
 [node name="Wall3" type="StaticBody2D" parent="Walls"]
 modulate = Color( 0, 0, 0, 1 )

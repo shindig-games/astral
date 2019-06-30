@@ -7,6 +7,7 @@ const GRAVITY = 20
 const SPEED = 300
 const UP = Vector2(0, -1)
 
+
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _physics_process(delta):
 	motion.y += GRAVITY
@@ -21,5 +22,5 @@ func _physics_process(delta):
 		motion.x = SPEED
 	else:
 		motion.x = 0
-	
+		
 	motion = move_and_slide(motion, UP)
