@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/parallax4.png-84e85fe8ab7e0857693f0627575c1302.stex"
+path="res://.import/parallax4.png-7b5f07d8469340f99644815b5faf1daa.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/HellionAssets/backgrounds/mountain/parallax4.png"
-dest_files=[ "res://.import/parallax4.png-84e85fe8ab7e0857693f0627575c1302.stex" ]
+source_file="res://resources/HellionAssets/backgrounds/mountain/parallax4.png"
+dest_files=[ "res://.import/parallax4.png-7b5f07d8469340f99644815b5faf1daa.stex" ]
 
 [params]
 

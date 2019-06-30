@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/1.png-f10e3443f59ba9efebb8a1d0eb8dfac5.stex"
+path="res://.import/1.png-973f876b4a89cd0d5eea00c08f3ba10c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/HellionAssets/enemies/goblin/attack/1.png"
-dest_files=[ "res://.import/1.png-f10e3443f59ba9efebb8a1d0eb8dfac5.stex" ]
+source_file="res://resources/HellionAssets/enemies/goblin/attack/1.png"
+dest_files=[ "res://.import/1.png-973f876b4a89cd0d5eea00c08f3ba10c.stex" ]
 
 [params]
 

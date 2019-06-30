@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/6.png-0d938a3515e8294f73a56f26f6416da6.stex"
+path="res://.import/6.png-201da20831235541d1063431cb751747.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/HellionAssets/player/punch/6.png"
-dest_files=[ "res://.import/6.png-0d938a3515e8294f73a56f26f6416da6.stex" ]
+source_file="res://resources/HellionAssets/player/punch/6.png"
+dest_files=[ "res://.import/6.png-201da20831235541d1063431cb751747.stex" ]
 
 [params]
 

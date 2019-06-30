@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/2.png-a11e758ba41bc0f04875bd900a210cac.stex"
+path="res://.import/2.png-d30e3acbaddb15f80e254b48f383ed6b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/HellionAssets/enemies/doof/attack/2.png"
-dest_files=[ "res://.import/2.png-a11e758ba41bc0f04875bd900a210cac.stex" ]
+source_file="res://resources/HellionAssets/enemies/doof/attack/2.png"
+dest_files=[ "res://.import/2.png-d30e3acbaddb15f80e254b48f383ed6b.stex" ]
 
 [params]
 

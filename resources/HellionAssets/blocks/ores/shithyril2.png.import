@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/shithyril2.png-668c514d888f9d96a832edcb5f244d24.stex"
+path="res://.import/shithyril2.png-be6de9257fa28ac8519b4c9a99946d12.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/HellionAssets/blocks/ores/shithyril2.png"
-dest_files=[ "res://.import/shithyril2.png-668c514d888f9d96a832edcb5f244d24.stex" ]
+source_file="res://resources/HellionAssets/blocks/ores/shithyril2.png"
+dest_files=[ "res://.import/shithyril2.png-be6de9257fa28ac8519b4c9a99946d12.stex" ]
 
 [params]
 

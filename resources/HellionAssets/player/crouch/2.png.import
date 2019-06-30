@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/2.png-750e2e0dd74f37eddc27d7428b3028b7.stex"
+path="res://.import/2.png-1304cd8ab4a0e75baab2320dc784372c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/HellionAssets/player/crouch/2.png"
-dest_files=[ "res://.import/2.png-750e2e0dd74f37eddc27d7428b3028b7.stex" ]
+source_file="res://resources/HellionAssets/player/crouch/2.png"
+dest_files=[ "res://.import/2.png-1304cd8ab4a0e75baab2320dc784372c.stex" ]
 
 [params]
 

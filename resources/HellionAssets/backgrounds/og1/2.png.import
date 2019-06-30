@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/2.png-71325f9b19ce15e4255154be94ff8216.stex"
+path="res://.import/2.png-a1696400c5b04a0cbfe42165351754fc.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/HellionAssets/backgrounds/og1/2.png"
-dest_files=[ "res://.import/2.png-71325f9b19ce15e4255154be94ff8216.stex" ]
+source_file="res://resources/HellionAssets/backgrounds/og1/2.png"
+dest_files=[ "res://.import/2.png-a1696400c5b04a0cbfe42165351754fc.stex" ]
 
 [params]
 

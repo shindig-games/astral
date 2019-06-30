@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/bowie.png-9df491a749caf1e403d286b71e0d50d6.stex"
+path="res://.import/bowie.png-5e759823a8aeaafad93078a5598c0c74.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/HellionAssets/blocks/dirt/bowie.png"
-dest_files=[ "res://.import/bowie.png-9df491a749caf1e403d286b71e0d50d6.stex" ]
+source_file="res://resources/HellionAssets/blocks/dirt/bowie.png"
+dest_files=[ "res://.import/bowie.png-5e759823a8aeaafad93078a5598c0c74.stex" ]
 
 [params]
 

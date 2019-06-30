@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/topGrass_g.png-00b70d1e286c6b6ba4e9c2b7e9892cc3.stex"
+path="res://.import/topGrass_g.png-f7e33b1f8833112f41818e112a597c43.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/HellionAssets/blocks/grass/topGrass_g.png"
-dest_files=[ "res://.import/topGrass_g.png-00b70d1e286c6b6ba4e9c2b7e9892cc3.stex" ]
+source_file="res://resources/HellionAssets/blocks/grass/topGrass_g.png"
+dest_files=[ "res://.import/topGrass_g.png-f7e33b1f8833112f41818e112a597c43.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/backgroundNight.png-d90c735881038545296d61beb714eb1b.stex"
+path="res://.import/backgroundNight.png-8dfe675cd8e4b9601db00e9c73c71e0b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/HellionAssets/backgrounds/old/backgroundNight.png"
-dest_files=[ "res://.import/backgroundNight.png-d90c735881038545296d61beb714eb1b.stex" ]
+source_file="res://resources/HellionAssets/backgrounds/old/backgroundNight.png"
+dest_files=[ "res://.import/backgroundNight.png-8dfe675cd8e4b9601db00e9c73c71e0b.stex" ]
 
 [params]
 

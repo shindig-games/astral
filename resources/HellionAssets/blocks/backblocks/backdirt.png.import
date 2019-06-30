@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/backdirt.png-acd141e81b92936f9e1abd97c86fe3fb.stex"
+path="res://.import/backdirt.png-ce65236f740baace800de1c2ee5e5da7.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/HellionAssets/blocks/backblocks/backdirt.png"
-dest_files=[ "res://.import/backdirt.png-acd141e81b92936f9e1abd97c86fe3fb.stex" ]
+source_file="res://resources/HellionAssets/blocks/backblocks/backdirt.png"
+dest_files=[ "res://.import/backdirt.png-ce65236f740baace800de1c2ee5e5da7.stex" ]
 
 [params]
 

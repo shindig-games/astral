@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/a1.png-782eecc51bf8131cffc7c85acbf09516.stex"
+path="res://.import/a1.png-945c72f7f08c0f8a3c5485f417a8204d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/HellionAssets/enemies/doof/idle/a1.png"
-dest_files=[ "res://.import/a1.png-782eecc51bf8131cffc7c85acbf09516.stex" ]
+source_file="res://resources/HellionAssets/enemies/doof/idle/a1.png"
+dest_files=[ "res://.import/a1.png-945c72f7f08c0f8a3c5485f417a8204d.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/stonebrick.png-5ff83656e1ceea3fcd9638d01c97dc5c.stex"
+path="res://.import/stonebrick.png-57a142553c95e069231c0806cf2da507.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/HellionAssets/blocks/stone/stonebrick.png"
-dest_files=[ "res://.import/stonebrick.png-5ff83656e1ceea3fcd9638d01c97dc5c.stex" ]
+source_file="res://resources/HellionAssets/blocks/stone/stonebrick.png"
+dest_files=[ "res://.import/stonebrick.png-57a142553c95e069231c0806cf2da507.stex" ]
 
 [params]
 

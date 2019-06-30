@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/stone1.png-d9cde7310b33589c1ad1c8e6bf763058.stex"
+path="res://.import/stone1.png-4959cdae38f29d7f341751d3a448f3b3.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/HellionAssets/blocks/stone/stone1.png"
-dest_files=[ "res://.import/stone1.png-d9cde7310b33589c1ad1c8e6bf763058.stex" ]
+source_file="res://resources/HellionAssets/blocks/stone/stone1.png"
+dest_files=[ "res://.import/stone1.png-4959cdae38f29d7f341751d3a448f3b3.stex" ]
 
 [params]
 

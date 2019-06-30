@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/snow1.png-d0b99b1c58bab3c9de427ecff82ce3fd.stex"
+path="res://.import/snow1.png-abbddd3120fc4232a9f36fdd37b8caab.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/HellionAssets/backgrounds/snow/snow1.png"
-dest_files=[ "res://.import/snow1.png-d0b99b1c58bab3c9de427ecff82ce3fd.stex" ]
+source_file="res://resources/HellionAssets/backgrounds/snow/snow1.png"
+dest_files=[ "res://.import/snow1.png-abbddd3120fc4232a9f36fdd37b8caab.stex" ]
 
 [params]
 

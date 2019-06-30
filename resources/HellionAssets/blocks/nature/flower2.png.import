@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/flower2.png-6528d66a4744b3ff9b648a8806b07972.stex"
+path="res://.import/flower2.png-ea0e1a15d620cbfd7632481b4f214b9c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/HellionAssets/blocks/nature/flower2.png"
-dest_files=[ "res://.import/flower2.png-6528d66a4744b3ff9b648a8806b07972.stex" ]
+source_file="res://resources/HellionAssets/blocks/nature/flower2.png"
+dest_files=[ "res://.import/flower2.png-ea0e1a15d620cbfd7632481b4f214b9c.stex" ]
 
 [params]
 

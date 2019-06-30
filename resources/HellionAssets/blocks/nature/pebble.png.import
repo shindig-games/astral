@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/pebble.png-6cfa1b5f36e967847bd9196ee5cb3ee5.stex"
+path="res://.import/pebble.png-b9b86c35efbe459ddfdf5168c7789f6e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/HellionAssets/blocks/nature/pebble.png"
-dest_files=[ "res://.import/pebble.png-6cfa1b5f36e967847bd9196ee5cb3ee5.stex" ]
+source_file="res://resources/HellionAssets/blocks/nature/pebble.png"
+dest_files=[ "res://.import/pebble.png-b9b86c35efbe459ddfdf5168c7789f6e.stex" ]
 
 [params]
 

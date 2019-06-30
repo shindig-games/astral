@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/RN.png-493b774b1c6af7688ebdbdd289189746.stex"
+path="res://.import/RN.png-78abf0f8fe3563afde672a42905094fe.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/HellionAssets/blocks/transparency/RN.png"
-dest_files=[ "res://.import/RN.png-493b774b1c6af7688ebdbdd289189746.stex" ]
+source_file="res://resources/HellionAssets/blocks/transparency/RN.png"
+dest_files=[ "res://.import/RN.png-78abf0f8fe3563afde672a42905094fe.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/mountain4.png-430e2f3135f8fef70642796fbbdfae47.stex"
+path="res://.import/mountain4.png-98d4e06c312a3a95fcfc6ab40b58c314.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/HellionAssets/backgrounds/mountain2/mountain4.png"
-dest_files=[ "res://.import/mountain4.png-430e2f3135f8fef70642796fbbdfae47.stex" ]
+source_file="res://resources/HellionAssets/backgrounds/mountain2/mountain4.png"
+dest_files=[ "res://.import/mountain4.png-98d4e06c312a3a95fcfc6ab40b58c314.stex" ]
 
 [params]
 

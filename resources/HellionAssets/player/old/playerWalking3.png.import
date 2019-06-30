@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/playerWalking3.png-1da7432b75a497ada6e7a8bcc3895952.stex"
+path="res://.import/playerWalking3.png-68c6a78b16440efaf585ff80f41876b2.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/HellionAssets/player/old/playerWalking3.png"
-dest_files=[ "res://.import/playerWalking3.png-1da7432b75a497ada6e7a8bcc3895952.stex" ]
+source_file="res://resources/HellionAssets/player/old/playerWalking3.png"
+dest_files=[ "res://.import/playerWalking3.png-68c6a78b16440efaf585ff80f41876b2.stex" ]
 
 [params]
 

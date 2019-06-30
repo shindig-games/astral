@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/2.png-a1d26fa30b7b0598ef8805d098d8ea78.stex"
+path="res://.import/2.png-abe51e53181b60d3a37c0e6f15fd3280.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/HellionAssets/enemies/doof/walk/2.png"
-dest_files=[ "res://.import/2.png-a1d26fa30b7b0598ef8805d098d8ea78.stex" ]
+source_file="res://resources/HellionAssets/enemies/doof/walk/2.png"
+dest_files=[ "res://.import/2.png-abe51e53181b60d3a37c0e6f15fd3280.stex" ]
 
 [params]
 

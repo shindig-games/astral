@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/treeLeftRoot2.png-6aac4974351c223b8b4a668b17cc3f52.stex"
+path="res://.import/treeLeftRoot2.png-0d3d535a35d5f7509ffb64361750e437.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/HellionAssets/blocks/tree/treeLeftRoot2.png"
-dest_files=[ "res://.import/treeLeftRoot2.png-6aac4974351c223b8b4a668b17cc3f52.stex" ]
+source_file="res://resources/HellionAssets/blocks/tree/treeLeftRoot2.png"
+dest_files=[ "res://.import/treeLeftRoot2.png-0d3d535a35d5f7509ffb64361750e437.stex" ]
 
 [params]
 

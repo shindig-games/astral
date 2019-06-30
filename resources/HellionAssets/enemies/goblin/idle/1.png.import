@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/1.png-5422523f392da0e09e03b06a1cede6b6.stex"
+path="res://.import/1.png-4859080cba1cee5cddec44cfdff4cc7e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/HellionAssets/enemies/goblin/idle/1.png"
-dest_files=[ "res://.import/1.png-5422523f392da0e09e03b06a1cede6b6.stex" ]
+source_file="res://resources/HellionAssets/enemies/goblin/idle/1.png"
+dest_files=[ "res://.import/1.png-4859080cba1cee5cddec44cfdff4cc7e.stex" ]
 
 [params]
 

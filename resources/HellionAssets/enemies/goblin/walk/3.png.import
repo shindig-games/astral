@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/3.png-c3b5aacd7255758d7a6e799a41b2506e.stex"
+path="res://.import/3.png-4569ef11d13467279be8ec6878f85b31.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/HellionAssets/enemies/goblin/walk/3.png"
-dest_files=[ "res://.import/3.png-c3b5aacd7255758d7a6e799a41b2506e.stex" ]
+source_file="res://resources/HellionAssets/enemies/goblin/walk/3.png"
+dest_files=[ "res://.import/3.png-4569ef11d13467279be8ec6878f85b31.stex" ]
 
 [params]
 

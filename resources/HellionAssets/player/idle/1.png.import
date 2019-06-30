@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/1.png-4346de2e1f62b09cc9e9e13c73f07bb8.stex"
+path="res://.import/1.png-5e0e675ff33e2c99ea3bc4915de8b04b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/HellionAssets/player/idle/1.png"
-dest_files=[ "res://.import/1.png-4346de2e1f62b09cc9e9e13c73f07bb8.stex" ]
+source_file="res://resources/HellionAssets/player/idle/1.png"
+dest_files=[ "res://.import/1.png-5e0e675ff33e2c99ea3bc4915de8b04b.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/gradient.png-86af2521ca1ffbac61993bcdaa51cf8f.stex"
+path="res://.import/gradient.png-bfe49665f3c9c7413c045e7074e48325.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/HellionAssets/backgrounds/gradient.png"
-dest_files=[ "res://.import/gradient.png-86af2521ca1ffbac61993bcdaa51cf8f.stex" ]
+source_file="res://resources/HellionAssets/backgrounds/gradient.png"
+dest_files=[ "res://.import/gradient.png-bfe49665f3c9c7413c045e7074e48325.stex" ]
 
 [params]
 
