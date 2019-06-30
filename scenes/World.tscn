@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://src/player/player.gd" type="Script" id=1]
 [ext_resource path="res://icon.png" type="Texture" id=2]
+[ext_resource path="res://resources/TileSets/DirtTileSet.tres" type="TileSet" id=3]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 32, 64 )
@@ -12,25 +13,26 @@ extents = Vector2( 32, 32 )
 [node name="Node2D" type="Node2D"]
 
 [node name="KinematicBody2D" type="KinematicBody2D" parent="."]
-editor/display_folded = true
-position = Vector2( 32, 414.732 )
+position = Vector2( 480, 256 )
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_group_": true
 }
 
 [node name="Sprite" type="Sprite" parent="KinematicBody2D"]
-position = Vector2( -1.12057e-05, 1.90735e-06 )
+position = Vector2( -1.14441e-05, -5.72205e-06 )
 scale = Vector2( 0.5, 1 )
 texture = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="KinematicBody2D"]
+visible = false
 shape = SubResource( 1 )
 
 [node name="Walls" type="Node2D" parent="."]
-editor/display_folded = true
 
 [node name="Wall3" type="StaticBody2D" parent="Walls"]
+editor/display_folded = true
+visible = false
 modulate = Color( 0, 0, 0, 1 )
 position = Vector2( 864, 512 )
 __meta__ = {
@@ -45,6 +47,8 @@ texture = ExtResource( 2 )
 shape = SubResource( 2 )
 
 [node name="Wall" type="StaticBody2D" parent="Walls"]
+editor/display_folded = true
+visible = false
 modulate = Color( 0, 0, 0, 1 )
 position = Vector2( 800, 512 )
 __meta__ = {
@@ -59,6 +63,8 @@ texture = ExtResource( 2 )
 shape = SubResource( 2 )
 
 [node name="Wall2" type="StaticBody2D" parent="Walls"]
+editor/display_folded = true
+visible = false
 modulate = Color( 0, 0, 0, 1 )
 position = Vector2( 608, 384 )
 __meta__ = {
@@ -73,6 +79,8 @@ texture = ExtResource( 2 )
 shape = SubResource( 2 )
 
 [node name="Wall4" type="StaticBody2D" parent="Walls"]
+editor/display_folded = true
+visible = false
 modulate = Color( 0, 0, 0, 1 )
 position = Vector2( 544, 384 )
 __meta__ = {
@@ -87,6 +95,8 @@ texture = ExtResource( 2 )
 shape = SubResource( 2 )
 
 [node name="Wall5" type="StaticBody2D" parent="Walls"]
+editor/display_folded = true
+visible = false
 modulate = Color( 0, 0, 0, 1 )
 position = Vector2( 480, 448 )
 __meta__ = {
@@ -101,6 +111,8 @@ texture = ExtResource( 2 )
 shape = SubResource( 2 )
 
 [node name="Wall6" type="StaticBody2D" parent="Walls"]
+editor/display_folded = true
+visible = false
 modulate = Color( 0, 0, 0, 1 )
 position = Vector2( 288, 512 )
 __meta__ = {
@@ -115,6 +127,8 @@ texture = ExtResource( 2 )
 shape = SubResource( 2 )
 
 [node name="Wall7" type="StaticBody2D" parent="Walls"]
+editor/display_folded = true
+visible = false
 modulate = Color( 0, 0, 0, 1 )
 position = Vector2( 160, 512 )
 __meta__ = {
@@ -129,6 +143,8 @@ texture = ExtResource( 2 )
 shape = SubResource( 2 )
 
 [node name="Wall8" type="StaticBody2D" parent="Walls"]
+editor/display_folded = true
+visible = false
 modulate = Color( 0, 0, 0, 1 )
 position = Vector2( 96, 512 )
 __meta__ = {
@@ -143,6 +159,8 @@ texture = ExtResource( 2 )
 shape = SubResource( 2 )
 
 [node name="Wall9" type="StaticBody2D" parent="Walls"]
+editor/display_folded = true
+visible = false
 modulate = Color( 0, 0, 0, 1 )
 position = Vector2( 32, 512 )
 __meta__ = {
@@ -157,6 +175,8 @@ texture = ExtResource( 2 )
 shape = SubResource( 2 )
 
 [node name="Wall10" type="StaticBody2D" parent="Walls"]
+editor/display_folded = true
+visible = false
 modulate = Color( 0, 0, 0, 1 )
 position = Vector2( 352, 512 )
 __meta__ = {
@@ -169,3 +189,10 @@ texture = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/Wall10"]
 shape = SubResource( 2 )
+
+[node name="TileMap" type="TileMap" parent="Walls"]
+scale = Vector2( 8, 8 )
+tile_set = ExtResource( 3 )
+cell_size = Vector2( 8, 8 )
+format = 1
+tile_data = PoolIntArray( 65544, 3, 0, 65545, 3, 0, 131076, 3, 0, 131077, 3, 0, 327683, 3, 0, 327684, 3, 0, 327685, 3, 0, 327686, 3, 0, 327687, 3, 0, 327688, 3, 0, 327689, 3, 0, 327690, 3, 0, 327691, 3, 0, 327692, 3, 0, 327693, 3, 0, 393220, 1, 0, 393221, 1, 0, 393222, 1, 0, 393223, 1, 0, 393224, 1, 0, 393225, 1, 0, 393226, 1, 0, 393227, 1, 0, 393228, 1, 0, 1638511, 0, 0 )

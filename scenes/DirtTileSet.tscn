@@ -1,0 +1,82 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://resources/HellionAssets/blocks/dirt/dirt1.png" type="Texture" id=1]
+[ext_resource path="res://resources/HellionAssets/blocks/dirt/dirt18.png" type="Texture" id=2]
+[ext_resource path="res://resources/HellionAssets/blocks/grass/grass_g.png" type="Texture" id=3]
+[ext_resource path="res://resources/HellionAssets/blocks/grass/grass_g8.png" type="Texture" id=4]
+[ext_resource path="res://resources/HellionAssets/blocks/stone/stone2.png" type="Texture" id=5]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 4, 4 )
+
+[node name="Node2D" type="Node2D"]
+
+[node name="0" type="Sprite" parent="."]
+position = Vector2( 192, 96 )
+scale = Vector2( 8, 8 )
+texture = ExtResource( 1 )
+centered = false
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="0"]
+visible = false
+position = Vector2( 4, 4 )
+shape = SubResource( 1 )
+
+[node name="1" type="Sprite" parent="."]
+position = Vector2( 320, 352 )
+scale = Vector2( 8, 8 )
+texture = ExtResource( 2 )
+centered = false
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="1"]
+visible = false
+position = Vector2( 4, 4 )
+shape = SubResource( 1 )
+
+[node name="2" type="Sprite" parent="."]
+position = Vector2( 96, 192 )
+scale = Vector2( 4, 4 )
+texture = ExtResource( 3 )
+centered = false
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="2"]
+visible = false
+position = Vector2( 4, 4 )
+shape = SubResource( 1 )
+
+[node name="4" type="Sprite" parent="."]
+position = Vector2( 320, 288 )
+scale = Vector2( 8, 8 )
+texture = ExtResource( 4 )
+centered = false
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="4"]
+visible = false
+position = Vector2( 4, 4 )
+shape = SubResource( 1 )
+
+[node name="3" type="Sprite" parent="."]
+position = Vector2( 320, 192 )
+scale = Vector2( 4, 4 )
+texture = ExtResource( 5 )
+centered = false
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="3"]
+visible = false
+position = Vector2( 4, 4 )
+shape = SubResource( 1 )
