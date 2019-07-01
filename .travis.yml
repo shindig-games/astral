@@ -3,12 +3,14 @@
 # branch safelist
 branches:
   only:
-    - release-0.0.1
+    - /.*/
 
 env:
   - GODOT_VERSION="3.1.1"
 
 before_install:
+
+  - ls -l
 
   # install dependencies
 
@@ -32,17 +34,20 @@ before_install:
   - mkdir -p ~/.local/share/godot/templates/${GODOT_VERSION}.stable
 
   - unzip Godot_v${GODOT_VERSION}-stable_linux_headless.64.zip
-  - mv Godot_v${GODOT_VERSION}-stable_linux_headless.64 /usr/local/bin/godot
+  - sudo mv Godot_v${GODOT_VERSION}-stable_linux_headless.64 /usr/local/bin/godot
   - unzip Godot_v${GODOT_VERSION}-stable_export_templates.tpz
-  - mv templates/* ~/.local/share/godot/templates/${GODOT_VERSION}.stable
-  - rm -f Godot_v${GODOT_VERSION}-stable_export_templates.tpz Godot_v${GODOT_VERSION}-stable_linux_headless.64.zip
+  - sudo mv templates/* ~/.local/share/godot/templates/${GODOT_VERSION}.stable
+  - sudo rm -f Godot_v${GODOT_VERSION}-stable_export_templates.tpz Godot_v${GODOT_VERSION}-stable_linux_headless.64.zip
+
+script:
+  - godot --export "Windows Desktop" ./build/astral.exe
 
 # github tagged releases
 
 deploy:
   provider: releases
   api_key: "9422036dea8551d0dae667f2b5834951d36eeb9d"
-  file: "FILE TO UPLOAD"
+  file: "./build/astral.exe"
   skip_cleanup: true
   on:
     tags: true  
