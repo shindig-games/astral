@@ -40,14 +40,14 @@ before_install:
   - sudo rm -f Godot_v${GODOT_VERSION}-stable_export_templates.tpz Godot_v${GODOT_VERSION}-stable_linux_headless.64.zip
 
 script:
-  - godot --export "Windows Desktop" ./build/game.exe
+  - godot --export "Windows Desktop" ./build/astral.exe
 
 # github tagged releases
 
 deploy:
   provider: releases
   api_key: "9422036dea8551d0dae667f2b5834951d36eeb9d"
-  file: "FILE TO UPLOAD"
+  file: "./build/astral.exe"
   skip_cleanup: true
   on:
     tags: true  
