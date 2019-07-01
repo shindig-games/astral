@@ -46,7 +46,7 @@ script:
 
 deploy:
   provider: releases
-  api_key: "8a5841cbd1c943ce28ae602410f825f7d8e5cb7a"
+  api_key: "f83a4f888535beeadbad8f261b3377994ad1408f"
   file: "./build/astral.exe"
   skip_cleanup: true
   on:
