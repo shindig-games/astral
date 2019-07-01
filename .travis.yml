@@ -3,7 +3,7 @@
 # branch safelist
 branches:
   only:
-    - release-0.0.1
+    - /.*/
 
 env:
   - GODOT_VERSION="3.1.1"
