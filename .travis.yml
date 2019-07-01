@@ -10,6 +10,8 @@ env:
 
 before_install:
 
+  - ls -l
+
   # install dependencies
 
   - sudo apt-get update
@@ -32,10 +34,13 @@ before_install:
   - mkdir -p ~/.local/share/godot/templates/${GODOT_VERSION}.stable
 
   - unzip Godot_v${GODOT_VERSION}-stable_linux_headless.64.zip
-  - mv Godot_v${GODOT_VERSION}-stable_linux_headless.64 /usr/local/bin/godot
+  - sudo mv Godot_v${GODOT_VERSION}-stable_linux_headless.64 /usr/local/bin/godot
   - unzip Godot_v${GODOT_VERSION}-stable_export_templates.tpz
-  - mv templates/* ~/.local/share/godot/templates/${GODOT_VERSION}.stable
-  - rm -f Godot_v${GODOT_VERSION}-stable_export_templates.tpz Godot_v${GODOT_VERSION}-stable_linux_headless.64.zip
+  - sudo mv templates/* ~/.local/share/godot/templates/${GODOT_VERSION}.stable
+  - sudo rm -f Godot_v${GODOT_VERSION}-stable_export_templates.tpz Godot_v${GODOT_VERSION}-stable_linux_headless.64.zip
+
+script:
+  - godot --export "Windows Desktop" ./build/game.exe
 
 # github tagged releases
 
