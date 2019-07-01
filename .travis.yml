@@ -46,7 +46,7 @@ script:
 
 deploy:
   provider: releases
-  api_key: "f83a4f888535beeadbad8f261b3377994ad1408f"
+  api_key: "$GH_TOKEN"
   file: "./build/astral.exe"
   skip_cleanup: true
   on:
