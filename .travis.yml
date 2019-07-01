@@ -40,14 +40,17 @@ before_install:
   - sudo rm -f Godot_v${GODOT_VERSION}-stable_export_templates.tpz Godot_v${GODOT_VERSION}-stable_linux_headless.64.zip
 
 script:
-  - godot --export "Windows Desktop" ./build/astral.exe
+  - godot --export "Windows Desktop" ./build/astral-win.exe
+  - godot --export "Mac OSX" ./build/astral-mac.dmg
 
 # github tagged releases
 
 deploy:
   provider: releases
   api_key: "$GH_TOKEN"
-  file: "./build/astral.exe"
+  file: 
+    - "./build/astral-win.exe"
+    - "./build/astral-mac.dmg"
   skip_cleanup: true
   on:
-    tags: true  
+    tags: true
