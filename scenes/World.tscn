@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://src/player/player.gd" type="Script" id=1]
-[ext_resource path="res://icon.png" type="Texture" id=2]
+[ext_resource path="res://resources/HellionAssets/player/idle/1.png" type="Texture" id=2]
 [ext_resource path="res://resources/TileSets/DirtTileSet.tres" type="TileSet" id=3]
 
 [sub_resource type="RectangleShape2D" id=1]
@@ -10,15 +10,15 @@ extents = Vector2( 32, 64 )
 [node name="World" type="Node2D"]
 
 [node name="Player" type="KinematicBody2D" parent="."]
-position = Vector2( 96, 576 )
+position = Vector2( 100.883, 578.052 )
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_group_": true
 }
 
 [node name="Sprite" type="Sprite" parent="Player"]
-position = Vector2( -1.14441e-005, -5.72205e-006 )
-scale = Vector2( 0.5, 1 )
+position = Vector2( -0.616119, 2.33127 )
+scale = Vector2( 2, 2 )
 texture = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
