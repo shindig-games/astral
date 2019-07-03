@@ -28,10 +28,10 @@ func _physics_process(delta):
 		if Input.is_action_pressed("ui_up"):
 			motion.y += JUMP_HEIGHT
 	else:
-		$Sprite.play("jump")
-	
-	if motion.y < 4:
-		$Sprite.play("fall")
+		if motion.y < 0:
+			$Sprite.play("jump")
+		else:
+			$Sprite.play("fall")
 		
 		
 		

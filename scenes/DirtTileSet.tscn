@@ -18,8 +18,8 @@ extents = Vector2( 8, 8 )
 [node name="Node2D" type="Node2D"]
 
 [node name="0" type="Sprite" parent="."]
-position = Vector2( 192, 96 )
-scale = Vector2( 16, 16 )
+position = Vector2( 64, 0 )
+scale = Vector2( 8, 8 )
 texture = ExtResource( 1 )
 centered = false
 __meta__ = {
@@ -34,7 +34,7 @@ position = Vector2( 4, 4 )
 shape = SubResource( 1 )
 
 [node name="2" type="Sprite" parent="."]
-position = Vector2( 192, 288 )
+position = Vector2( 192, 96 )
 scale = Vector2( 4, 4 )
 texture = ExtResource( 2 )
 centered = false
@@ -50,7 +50,7 @@ position = Vector2( 8, 8 )
 shape = SubResource( 2 )
 
 [node name="3" type="Sprite" parent="."]
-position = Vector2( 32, 160 )
+position = Vector2( 64, 96 )
 scale = Vector2( 4, 4 )
 texture = ExtResource( 3 )
 centered = false
@@ -64,7 +64,7 @@ position = Vector2( 8, 8 )
 shape = SubResource( 3 )
 
 [node name="1" type="Sprite" parent="."]
-position = Vector2( 384, 256 )
+position = Vector2( 320, 0 )
 scale = Vector2( 8, 8 )
 texture = ExtResource( 4 )
 centered = false
@@ -80,7 +80,7 @@ position = Vector2( 4, 4 )
 shape = SubResource( 1 )
 
 [node name="4" type="Sprite" parent="."]
-position = Vector2( 384, 128 )
+position = Vector2( 192, 0 )
 scale = Vector2( 8, 8 )
 texture = ExtResource( 5 )
 centered = false
