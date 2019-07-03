@@ -1,11 +1,61 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=28 format=2]
 
 [ext_resource path="res://src/player/player.gd" type="Script" id=1]
-[ext_resource path="res://resources/HellionAssets/player/idle/1.png" type="Texture" id=2]
-[ext_resource path="res://resources/TileSets/DirtTileSet.tres" type="TileSet" id=3]
+[ext_resource path="res://resources/HellionAssets/player/idle/2.png" type="Texture" id=2]
+[ext_resource path="res://resources/HellionAssets/player/idle/1.png" type="Texture" id=3]
+[ext_resource path="res://resources/HellionAssets/player/walk/1.png" type="Texture" id=4]
+[ext_resource path="res://resources/HellionAssets/player/walk/2.png" type="Texture" id=5]
+[ext_resource path="res://resources/HellionAssets/player/walk/3.png" type="Texture" id=6]
+[ext_resource path="res://resources/HellionAssets/player/walk/4.png" type="Texture" id=7]
+[ext_resource path="res://resources/HellionAssets/player/walk/5.png" type="Texture" id=8]
+[ext_resource path="res://resources/HellionAssets/player/walk/6.png" type="Texture" id=9]
+[ext_resource path="res://resources/HellionAssets/player/walk/7.png" type="Texture" id=10]
+[ext_resource path="res://resources/HellionAssets/player/walk/8.png" type="Texture" id=11]
+[ext_resource path="res://resources/HellionAssets/player/walk/9.png" type="Texture" id=12]
+[ext_resource path="res://resources/HellionAssets/player/walk/10.png" type="Texture" id=13]
+[ext_resource path="res://resources/HellionAssets/player/walk/11.png" type="Texture" id=14]
+[ext_resource path="res://resources/HellionAssets/player/walk/12.png" type="Texture" id=15]
+[ext_resource path="res://resources/HellionAssets/player/jump/1.png" type="Texture" id=16]
+[ext_resource path="res://resources/HellionAssets/player/jump/2.png" type="Texture" id=17]
+[ext_resource path="res://resources/HellionAssets/player/jump/3.png" type="Texture" id=18]
+[ext_resource path="res://resources/HellionAssets/player/jump/4.png" type="Texture" id=19]
+[ext_resource path="res://resources/HellionAssets/player/crouch/1.png" type="Texture" id=20]
+[ext_resource path="res://resources/HellionAssets/player/crouch/2.png" type="Texture" id=21]
+[ext_resource path="res://resources/HellionAssets/player/fall/1.png" type="Texture" id=22]
+[ext_resource path="res://resources/HellionAssets/player/fall/2.png" type="Texture" id=23]
+[ext_resource path="res://resources/HellionAssets/player/fall/3.png" type="Texture" id=24]
+[ext_resource path="res://resources/TileSets/DirtTileSet.tres" type="TileSet" id=25]
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 2 ), ExtResource( 3 ) ],
+"loop": true,
+"name": "idle",
+"speed": 3.0
+}, {
+"frames": [ ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ) ],
+"loop": true,
+"name": "walk",
+"speed": 30.0
+}, {
+"frames": [ ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ) ],
+"loop": false,
+"name": "jump",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 20 ), ExtResource( 21 ) ],
+"loop": false,
+"name": "crouch",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ) ],
+"loop": false,
+"name": "fall",
+"speed": 5.0
+} ]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 32, 64 )
+extents = Vector2( 29.2336, 59.1013 )
 
 [node name="World" type="Node2D"]
 
@@ -16,18 +66,20 @@ __meta__ = {
 "_edit_group_": true
 }
 
-[node name="Sprite" type="Sprite" parent="Player"]
+[node name="Sprite" type="AnimatedSprite" parent="Player"]
 position = Vector2( -0.616119, 2.33127 )
 scale = Vector2( 2, 2 )
-texture = ExtResource( 2 )
+frames = SubResource( 2 )
+animation = "walk"
+frame = 9
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
-visible = false
+position = Vector2( 4, 4 )
 shape = SubResource( 1 )
 
 [node name="TileMap" type="TileMap" parent="."]
 scale = Vector2( 4, 4 )
-tile_set = ExtResource( 3 )
+tile_set = ExtResource( 25 )
 cell_size = Vector2( 8, 8 )
 format = 1
 tile_data = PoolIntArray( 0, 2, 0, 2, 2, 0, 4, 2, 0, 6, 2, 0, 8, 2, 0, 10, 2, 0, 12, 2, 0, 14, 2, 0, 16, 2, 0, 18, 2, 0, 20, 2, 0, 22, 2, 0, 24, 2, 0, 26, 2, 0, 28, 2, 0, 30, 2, 0, 32, 2, 0, 34, 2, 0, 36, 2, 0, 38, 2, 0, 131072, 2, 0, 131110, 2, 0, 262144, 2, 0, 262182, 2, 0, 393216, 2, 0, 393254, 2, 0, 458754, 2, 0, 458756, 2, 0, 458758, 2, 0, 458760, 2, 0, 458766, 2, 0, 458768, 2, 0, 524288, 2, 0, 524326, 2, 0, 589826, 2, 0, 589828, 2, 0, 589830, 2, 0, 589832, 2, 0, 589838, 2, 0, 589840, 2, 0, 589845, 2, 0, 589846, 2, 0, 589847, 2, 0, 655360, 2, 0, 655389, 2, 0, 655391, 2, 0, 655398, 2, 0, 720898, 2, 0, 720900, 2, 0, 720902, 2, 0, 720904, 2, 0, 786432, 2, 0, 786470, 2, 0, 851970, 2, 0, 851972, 2, 0, 917504, 2, 0, 917540, 2, 0, 917542, 2, 0, 1048576, 2, 0, 1048614, 2, 0, 1179648, 2, 0, 1179679, 2, 0, 1179681, 2, 0, 1179683, 2, 0, 1179686, 2, 0, 1310720, 2, 0, 1310722, 2, 0, 1310724, 2, 0, 1310726, 2, 0, 1310728, 2, 0, 1310736, 2, 0, 1310738, 2, 0, 1310748, 2, 0, 1310750, 2, 0, 1310752, 2, 0, 1310754, 2, 0, 1310756, 2, 0, 1310758, 2, 0 )
