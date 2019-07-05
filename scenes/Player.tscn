@@ -7,23 +7,23 @@
 [ext_resource path="res://resources/HellionAssets/player/jump/2.png" type="Texture" id=5]
 [ext_resource path="res://resources/HellionAssets/player/jump/3.png" type="Texture" id=6]
 [ext_resource path="res://resources/HellionAssets/player/jump/4.png" type="Texture" id=7]
-[ext_resource path="res://resources/HellionAssets/player/crouch/1.png" type="Texture" id=8]
-[ext_resource path="res://resources/HellionAssets/player/crouch/2.png" type="Texture" id=9]
-[ext_resource path="res://resources/HellionAssets/player/fall/1.png" type="Texture" id=10]
-[ext_resource path="res://resources/HellionAssets/player/fall/2.png" type="Texture" id=11]
-[ext_resource path="res://resources/HellionAssets/player/fall/3.png" type="Texture" id=12]
-[ext_resource path="res://resources/HellionAssets/player/walk/1.png" type="Texture" id=13]
-[ext_resource path="res://resources/HellionAssets/player/walk/2.png" type="Texture" id=14]
-[ext_resource path="res://resources/HellionAssets/player/walk/3.png" type="Texture" id=15]
-[ext_resource path="res://resources/HellionAssets/player/walk/4.png" type="Texture" id=16]
-[ext_resource path="res://resources/HellionAssets/player/walk/5.png" type="Texture" id=17]
-[ext_resource path="res://resources/HellionAssets/player/walk/6.png" type="Texture" id=18]
-[ext_resource path="res://resources/HellionAssets/player/walk/7.png" type="Texture" id=19]
-[ext_resource path="res://resources/HellionAssets/player/walk/8.png" type="Texture" id=20]
-[ext_resource path="res://resources/HellionAssets/player/walk/9.png" type="Texture" id=21]
-[ext_resource path="res://resources/HellionAssets/player/walk/10.png" type="Texture" id=22]
-[ext_resource path="res://resources/HellionAssets/player/walk/11.png" type="Texture" id=23]
-[ext_resource path="res://resources/HellionAssets/player/walk/12.png" type="Texture" id=24]
+[ext_resource path="res://resources/HellionAssets/player/walk/1.png" type="Texture" id=8]
+[ext_resource path="res://resources/HellionAssets/player/walk/2.png" type="Texture" id=9]
+[ext_resource path="res://resources/HellionAssets/player/walk/3.png" type="Texture" id=10]
+[ext_resource path="res://resources/HellionAssets/player/walk/4.png" type="Texture" id=11]
+[ext_resource path="res://resources/HellionAssets/player/walk/5.png" type="Texture" id=12]
+[ext_resource path="res://resources/HellionAssets/player/walk/6.png" type="Texture" id=13]
+[ext_resource path="res://resources/HellionAssets/player/walk/7.png" type="Texture" id=14]
+[ext_resource path="res://resources/HellionAssets/player/walk/8.png" type="Texture" id=15]
+[ext_resource path="res://resources/HellionAssets/player/walk/9.png" type="Texture" id=16]
+[ext_resource path="res://resources/HellionAssets/player/walk/10.png" type="Texture" id=17]
+[ext_resource path="res://resources/HellionAssets/player/walk/11.png" type="Texture" id=18]
+[ext_resource path="res://resources/HellionAssets/player/walk/12.png" type="Texture" id=19]
+[ext_resource path="res://resources/HellionAssets/player/fall/1.png" type="Texture" id=20]
+[ext_resource path="res://resources/HellionAssets/player/fall/2.png" type="Texture" id=21]
+[ext_resource path="res://resources/HellionAssets/player/fall/3.png" type="Texture" id=22]
+[ext_resource path="res://resources/HellionAssets/player/crouch/1.png" type="Texture" id=23]
+[ext_resource path="res://resources/HellionAssets/player/crouch/2.png" type="Texture" id=24]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -37,20 +37,20 @@ animations = [ {
 "name": "jump",
 "speed": 10.0
 }, {
-"frames": [ ExtResource( 8 ), ExtResource( 9 ) ],
-"loop": false,
-"name": "crouch",
-"speed": 5.0
+"frames": [ ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ) ],
+"loop": true,
+"name": "walk",
+"speed": 20.0
 }, {
-"frames": [ ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ) ],
+"frames": [ ExtResource( 20 ), ExtResource( 21 ), ExtResource( 22 ) ],
 "loop": false,
 "name": "fall",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ) ],
-"loop": true,
-"name": "walk",
-"speed": 20.0
+"frames": [ ExtResource( 23 ), ExtResource( 24 ) ],
+"loop": false,
+"name": "crouch",
+"speed": 5.0
 } ]
 
 [sub_resource type="CapsuleShape2D" id=2]
@@ -66,17 +66,37 @@ position = Vector2( -0.616119, 2.33127 )
 scale = Vector2( 2, 2 )
 frames = SubResource( 1 )
 animation = "walk"
-frame = 5
-playing = true
+frame = 11
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
 position = Vector2( 4.66107, 4.33057 )
 shape = SubResource( 2 )
-__meta__ = {
-"_edit_group_": true
-}
 
 [node name="Camera2D" type="Camera2D" parent="."]
 current = true
 drag_margin_h_enabled = false
 drag_margin_v_enabled = false
+
+[node name="Raycasts" type="Node2D" parent="."]
+visible = false
+
+[node name="right_1" type="RayCast2D" parent="Raycasts"]
+position = Vector2( 0, 45 )
+enabled = true
+cast_to = Vector2( 30, 0 )
+
+[node name="right_2" type="RayCast2D" parent="Raycasts"]
+position = Vector2( 0, -40 )
+enabled = true
+cast_to = Vector2( 30, 0 )
+
+[node name="left_1" type="RayCast2D" parent="Raycasts"]
+position = Vector2( 0, 45 )
+enabled = true
+cast_to = Vector2( -25, 0 )
+
+[node name="left_2" type="RayCast2D" parent="Raycasts"]
+position = Vector2( 0, -40 )
+enabled = true
+cast_to = Vector2( -25, 0 )
