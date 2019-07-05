@@ -9,6 +9,7 @@ var states = {}
 onready var parent = get_parent()
 
 func update(delta):
+
 	if state == null or parent == null:
 		return
 	

@@ -7,6 +7,8 @@ func _init(p):
 	add_state("walk")
 	add_state("jump")
 	add_state("fall")
+	add_state("wall_slide")
+	add_state("wall_jump")
 	parent = p
 
 func _state_logic(delta):
@@ -20,6 +22,12 @@ func _state_logic(delta):
 			parent.apply_move(delta)
 		states.fall:
 			parent.apply_fall(delta)
+			parent.apply_move(delta)
+		states.wall_slide:
+			parent.apply_wall_slide(delta)
+			parent.apply_move(delta)
+		states.wall_jump:
+			parent.apply_wall_jump(delta)
 
 func _get_transition(delta):
 	match state:
@@ -42,9 +50,25 @@ func _get_transition(delta):
 			if parent.should_fall(delta):
 				return states.fall
 		
+		states.wall_jump:
+			if parent.should_fall(delta):
+				return states.fall
+		
 		states.fall:
 			if parent.should_idle(delta):
 				return states.idle	
+			if parent.should_move(delta):
+				return states.walk
+			if parent.should_wall_slide(delta):
+				return states.wall_slide
+		
+		states.wall_slide:
+			if parent.should_wall_jump(delta):
+				return states.wall_jump
+			if parent.should_fall(delta):
+				return states.fall
+			if parent.should_idle(delta):
+				return states.idle
 			if parent.should_move(delta):
 				return states.walk
 			
