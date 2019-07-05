@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=2]
 
-[ext_resource path="res://scenes/Menu.gd" type="Script" id=1]
+[ext_resource path="res://src/menu/menu.gd" type="Script" id=1]
 
 [node name="Menu" type="Control"]
 anchor_right = 1.0
@@ -39,5 +39,4 @@ margin_top = 42.0
 margin_right = 41.0
 margin_bottom = 62.0
 text = "Quit"
-[connection signal="pressed" from="CenterContainer/VBoxContainer/Start" to="." method="_on_Start_pressed"]
 [connection signal="pressed" from="CenterContainer/VBoxContainer/Quit" to="." method="_on_Quit_pressed"]

@@ -8,9 +8,20 @@
 
 config_version=4
 
-_global_script_classes=[  ]
+_global_script_classes=[ {
+"base": "Node",
+"class": "FiniteStateMachine",
+"language": "GDScript",
+"path": "res://src/state/finite_state_machine.gd"
+}, {
+"base": "Node",
+"class": "PlayerStateMachine",
+"language": "GDScript",
+"path": "res://src/player/player_state_machine.gd"
+} ]
 _global_script_class_icons={
-
+"FiniteStateMachine": "",
+"PlayerStateMachine": ""
 }
 
 [application]
