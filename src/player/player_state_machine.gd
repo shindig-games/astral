@@ -41,6 +41,7 @@ func _get_transition(delta):
 			if parent.should_jump(delta):
 				return states.jump
 			if parent.should_crouch(delta):
+				parent.get_node("StandingCollisionShape").disabled = true
 				return states.crouch
 				
 		states.walk:
@@ -51,6 +52,7 @@ func _get_transition(delta):
 			if parent.should_fall(delta):
 				return states.fall
 			if parent.should_crouch(delta):
+				parent.get_node("StandingCollisionShape").disabled = true
 				return states.crouch
 		
 		states.jump:
@@ -81,8 +83,10 @@ func _get_transition(delta):
 				
 		states.crouch:
 			if parent.should_jump(delta):
+				parent.get_node("StandingCollisionShape").disabled = false
 				return states.jump
 			if parent.should_idle(delta):
+				parent.get_node("StandingCollisionShape").disabled = false
 				return states.idle
 			#if parent.should_roll:
 			#	return states.roll

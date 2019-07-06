@@ -59,7 +59,7 @@ height = 65.7068
 
 [sub_resource type="CapsuleShape2D" id=3]
 radius = 30.0
-height = 13.0
+height = 1.0
 
 [node name="Player" type="KinematicBody2D"]
 position = Vector2( 635.046, 358.146 )
@@ -83,7 +83,7 @@ drag_margin_h_enabled = false
 drag_margin_v_enabled = false
 
 [node name="CrouchingCollisionShape" type="CollisionShape2D" parent="."]
-position = Vector2( 5, 23 )
+position = Vector2( 5, 27 )
 shape = SubResource( 3 )
 
 [node name="Raycasts" type="Node2D" parent="."]

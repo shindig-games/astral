@@ -128,10 +128,10 @@ func should_crouch(delta):
 	if Input.is_action_pressed("ui_down"):
 		if time_since_on_floor == 0:
 			return true
+	return false
  
 # warning-ignore:unused_argument
 func apply_move(delta):
-	get_node("StandingCollisionShape").disabled = false
 	if Input.is_action_pressed("move_left") and lock_move_left_timer <= 0:
 		if direction == 1:
 			sprite.flip_h = true
@@ -150,28 +150,24 @@ func apply_move(delta):
 
 # warning-ignore:unused_argument
 func apply_idle(delta):
-	get_node("StandingCollisionShape").disabled = false
 	motion.x = 0
 
 # warning-ignore:unused_argument
 func apply_jump(delta):
-	get_node("StandingCollisionShape").disabled = false
 	if time_since_on_floor < 1:
 		motion.y = JUMP_SPEED
 		time_since_on_floor = 1
 
 # warning-ignore:unused_argument
 func apply_fall(delta):
-	get_node("StandingCollisionShape").disabled = false
+	pass
 
 # warning-ignore:unused_argument
 func apply_wall_slide(delta):
-	get_node("StandingCollisionShape").disabled = false
 	motion.y = min(motion.y, WALL_SLIDE_SPEED)
 
 # warning-ignore:unused_argument
 func apply_wall_jump(delta):
-	get_node("StandingCollisionShape").disabled = false
 	if wall_direction == 1:
 		lock_move_right_timer = 0.5
 	if wall_direction == -1:
@@ -183,15 +179,6 @@ func apply_wall_jump(delta):
 	lock_move_stop_timer = 0.5
 	
 func apply_crouch(delta):
-	get_node("StandingCollisionShape").disabled = true
 	motion.x = 0
-	if Input.is_action_pressed("move_left"):
-		if direction == 1:
-			sprite.flip_h = true
-		direction = -1
-	elif Input.is_action_pressed("move_right"):
-		if direction == -1:
-			sprite.flip_h = false
-		direction = 1
-	print(direction)
+	apply_move(delta)
 	
