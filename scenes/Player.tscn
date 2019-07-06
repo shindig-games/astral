@@ -1,27 +1,27 @@
-[gd_scene load_steps=27 format=2]
+[gd_scene load_steps=28 format=2]
 
 [ext_resource path="res://src/player/player.gd" type="Script" id=1]
 [ext_resource path="res://resources/HellionAssets/player/idle/2.png" type="Texture" id=2]
 [ext_resource path="res://resources/HellionAssets/player/idle/1.png" type="Texture" id=3]
-[ext_resource path="res://resources/HellionAssets/player/jump/1.png" type="Texture" id=4]
-[ext_resource path="res://resources/HellionAssets/player/jump/2.png" type="Texture" id=5]
-[ext_resource path="res://resources/HellionAssets/player/jump/3.png" type="Texture" id=6]
-[ext_resource path="res://resources/HellionAssets/player/jump/4.png" type="Texture" id=7]
-[ext_resource path="res://resources/HellionAssets/player/fall/1.png" type="Texture" id=8]
-[ext_resource path="res://resources/HellionAssets/player/fall/2.png" type="Texture" id=9]
-[ext_resource path="res://resources/HellionAssets/player/fall/3.png" type="Texture" id=10]
-[ext_resource path="res://resources/HellionAssets/player/walk/1.png" type="Texture" id=11]
-[ext_resource path="res://resources/HellionAssets/player/walk/2.png" type="Texture" id=12]
-[ext_resource path="res://resources/HellionAssets/player/walk/3.png" type="Texture" id=13]
-[ext_resource path="res://resources/HellionAssets/player/walk/4.png" type="Texture" id=14]
-[ext_resource path="res://resources/HellionAssets/player/walk/5.png" type="Texture" id=15]
-[ext_resource path="res://resources/HellionAssets/player/walk/6.png" type="Texture" id=16]
-[ext_resource path="res://resources/HellionAssets/player/walk/7.png" type="Texture" id=17]
-[ext_resource path="res://resources/HellionAssets/player/walk/8.png" type="Texture" id=18]
-[ext_resource path="res://resources/HellionAssets/player/walk/9.png" type="Texture" id=19]
-[ext_resource path="res://resources/HellionAssets/player/walk/10.png" type="Texture" id=20]
-[ext_resource path="res://resources/HellionAssets/player/walk/11.png" type="Texture" id=21]
-[ext_resource path="res://resources/HellionAssets/player/walk/12.png" type="Texture" id=22]
+[ext_resource path="res://resources/HellionAssets/player/walk/1.png" type="Texture" id=4]
+[ext_resource path="res://resources/HellionAssets/player/walk/2.png" type="Texture" id=5]
+[ext_resource path="res://resources/HellionAssets/player/walk/3.png" type="Texture" id=6]
+[ext_resource path="res://resources/HellionAssets/player/walk/4.png" type="Texture" id=7]
+[ext_resource path="res://resources/HellionAssets/player/walk/5.png" type="Texture" id=8]
+[ext_resource path="res://resources/HellionAssets/player/walk/6.png" type="Texture" id=9]
+[ext_resource path="res://resources/HellionAssets/player/walk/7.png" type="Texture" id=10]
+[ext_resource path="res://resources/HellionAssets/player/walk/8.png" type="Texture" id=11]
+[ext_resource path="res://resources/HellionAssets/player/walk/9.png" type="Texture" id=12]
+[ext_resource path="res://resources/HellionAssets/player/walk/10.png" type="Texture" id=13]
+[ext_resource path="res://resources/HellionAssets/player/walk/11.png" type="Texture" id=14]
+[ext_resource path="res://resources/HellionAssets/player/walk/12.png" type="Texture" id=15]
+[ext_resource path="res://resources/HellionAssets/player/jump/1.png" type="Texture" id=16]
+[ext_resource path="res://resources/HellionAssets/player/jump/2.png" type="Texture" id=17]
+[ext_resource path="res://resources/HellionAssets/player/jump/3.png" type="Texture" id=18]
+[ext_resource path="res://resources/HellionAssets/player/jump/4.png" type="Texture" id=19]
+[ext_resource path="res://resources/HellionAssets/player/fall/1.png" type="Texture" id=20]
+[ext_resource path="res://resources/HellionAssets/player/fall/2.png" type="Texture" id=21]
+[ext_resource path="res://resources/HellionAssets/player/fall/3.png" type="Texture" id=22]
 [ext_resource path="res://resources/HellionAssets/player/crouch/1.png" type="Texture" id=23]
 [ext_resource path="res://resources/HellionAssets/player/crouch/2.png" type="Texture" id=24]
 
@@ -32,20 +32,20 @@ animations = [ {
 "name": "idle",
 "speed": 3.0
 }, {
-"frames": [ ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ) ],
+"frames": [ ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ) ],
+"loop": true,
+"name": "walk",
+"speed": 20.0
+}, {
+"frames": [ ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ) ],
 "loop": false,
 "name": "jump",
 "speed": 10.0
 }, {
-"frames": [ ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ) ],
+"frames": [ ExtResource( 20 ), ExtResource( 21 ), ExtResource( 22 ) ],
 "loop": false,
 "name": "fall",
 "speed": 10.0
-}, {
-"frames": [ ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 22 ) ],
-"loop": true,
-"name": "walk",
-"speed": 20.0
 }, {
 "frames": [ ExtResource( 23 ), ExtResource( 24 ) ],
 "loop": false,
@@ -57,6 +57,10 @@ animations = [ {
 radius = 21.5868
 height = 65.7068
 
+[sub_resource type="CapsuleShape2D" id=3]
+radius = 30.0
+height = 13.0
+
 [node name="Player" type="KinematicBody2D"]
 position = Vector2( 635.046, 358.146 )
 script = ExtResource( 1 )
@@ -65,12 +69,11 @@ script = ExtResource( 1 )
 position = Vector2( -0.616119, 2.33127 )
 scale = Vector2( 2, 2 )
 frames = SubResource( 1 )
-animation = "fall"
-frame = 2
+animation = "crouch"
+frame = 1
 playing = true
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-visible = false
+[node name="StandingCollisionShape" type="CollisionShape2D" parent="."]
 position = Vector2( 4.66107, 4.33057 )
 shape = SubResource( 2 )
 
@@ -78,6 +81,10 @@ shape = SubResource( 2 )
 current = true
 drag_margin_h_enabled = false
 drag_margin_v_enabled = false
+
+[node name="CrouchingCollisionShape" type="CollisionShape2D" parent="."]
+position = Vector2( 5, 23 )
+shape = SubResource( 3 )
 
 [node name="Raycasts" type="Node2D" parent="."]
 visible = false
