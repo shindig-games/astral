@@ -92,6 +92,10 @@ func _enter_state(new_state, old_state):
 		
 		states.fall:
 			parent.play_anim("fall")
+		
+		states.wall_slide:
+			if parent.motion.y < 0:
+				parent.motion.y = 0
 
 func _exit_state(old_state, new_state):
 	pass

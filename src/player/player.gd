@@ -2,9 +2,10 @@ extends KinematicBody2D
 
 ###   CONSTANTS   ###
 
-const GRAVITY = 35
+const GRAVITY = 25
 
 const SPEED = 300
+const SPRINT_SPEED = 500
 
 const JUMP_SPEED = -600
 
@@ -98,14 +99,16 @@ func should_idle(delta):
 	return false
 
 func should_fall(delta):
-	if time_since_on_floor > 0.25 and check_wall_collision() == 0:
+	if check_wall_collision() != 0 and (Input.is_action_pressed("move_left") or Input.is_action_pressed("move_right")):
+		return false
+	if time_since_on_floor > 0.25:
 		return true
 	return false
 	
 func should_wall_slide(delta):
 	wall_direction = check_wall_collision()
-	if wall_direction != wall_jump_direction:
-		if wall_direction != 0 and motion.y >= 0:
+	if (wall_direction != wall_jump_direction) and (Input.is_action_pressed("move_left") or Input.is_action_pressed("move_right")):
+		if wall_direction != 0:
 			return true
 	return false
 
