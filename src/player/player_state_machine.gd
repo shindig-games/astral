@@ -62,6 +62,7 @@ func _get_transition(delta):
 		states.wall_jump:
 			if parent.should_fall(delta):
 				return states.fall
+			return states.fall
 		
 		states.fall:
 			if parent.should_idle(delta):
