@@ -11,7 +11,7 @@ const JUMP_SPEED = -600
 
 const WALL_SLIDE_SPEED = 200
 
-const WALL_JUMP_SPEED_Y = -700
+const WALL_JUMP_SPEED_Y = -750
 const WALL_JUMP_SPEED_X = 200
 
 ###   COMPONENTS   ###
@@ -178,7 +178,7 @@ func apply_fall(delta):
 # warning-ignore:unused_argument
 func apply_wall_slide(delta):
 	motion.y = min(motion.y, WALL_SLIDE_SPEED)
-	motion.y = 0
+	#motion.y = 0
 
 # warning-ignore:unused_argument
 func apply_wall_jump(delta):
