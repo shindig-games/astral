@@ -62,6 +62,7 @@ func _get_transition(delta):
 		states.wall_jump:
 			if parent.should_fall(delta):
 				return states.fall
+			return states.fall
 		
 		states.fall:
 			if parent.should_idle(delta):
@@ -111,6 +112,10 @@ func _enter_state(new_state, old_state):
 		
 		states.fall:
 			parent.play_anim("fall")
+		
+		states.wall_slide:
+			if parent.motion.y < 0:
+				parent.motion.y = 0
 			
 		states.crouch:
 			parent.play_anim("crouch")
